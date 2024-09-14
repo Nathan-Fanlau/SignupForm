@@ -1,0 +1,159 @@
+@font-face {
+	font-family: "montserratregular";
+	src: url("montserrat-regular-webfont.woff2") format("woff2"),
+		url("montserrat-regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root,
+html,
+body {
+	font-family: montserratregular, Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	box-sizing: border-box;
+	margin: 0;
+	border: 0;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+.whole {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.left {
+	height: 100%;
+	width: 40%;
+	background-image: url(img/halie-west-25xggax4bSA-unsplash.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.right {
+	height: 100%;
+	width: 60%;
+	background-color: rgb(248, 252, 255);
+	display: flex;
+	flex-direction: column;
+}
+
+.odin-logo {
+	background-color: rgb(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	width: 100%;
+	height: 7rem;
+	margin-top: 10rem;
+	position: absolute;
+}
+
+.logo {
+	height: 6rem;
+	width: auto;
+}
+
+.odin {
+	color: white;
+	font-size: 4rem;
+	text-align: center;
+}
+
+.top {
+	font-weight: bold;
+	margin-top: 2rem;
+	margin-left: 2rem;
+	margin-right: 12rem;
+}
+
+.outer-form {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	box-shadow: 0px 3px 6px rgb(165, 165, 165);
+	text-align: left;
+	padding-top: 0.5rem;
+	padding-left: 2rem;
+	padding-bottom: 2rem;
+}
+
+.outer-form > p {
+	font-weight: bold;
+}
+
+.inner-form {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	column-gap: 3rem;
+	row-gap: 1rem;
+	font-size: 0.7rem;
+  margin-right: 4rem;
+}
+
+label {
+	letter-spacing: 0.08rem;
+}
+
+input {
+	width: 12rem;
+	height: 1.35rem;
+	font: inherit;
+	font-size: 0.9rem;
+	padding-left: 0.3rem;
+	border-radius: 0.3rem;
+	box-shadow: none;
+	border: 1px solid rgb(212, 212, 212); /* Set the border color to white */
+}
+
+input:required {
+  outline: 1.5px solid rgb(255, 53, 53);
+}
+
+input:focus {
+  outline: 1.5px solid rgb(53, 57, 255);
+  box-shadow: 0px 2px 3px gray;
+}
+
+.bottom {
+	flex-direction: column;
+	gap: 4rem;
+	margin-left: 2rem;
+	margin-top: 2rem;
+}
+
+#submitBtn {
+	background-color: #596d48;
+	color: white;
+	width: 10rem;
+	height: 2.5rem;
+	font: inherit;
+	border: none;
+	font-size: 0.9rem;
+	border-radius: 0.5rem;
+	box-shadow: 0px 2px 6px gray;
+  cursor: pointer;
+}
+
+.bottom > div > span {
+  display: block;
+	font-size: 0.9rem;
+	margin-top: 1.5rem;
+}
+
+.login-link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #596d48;
+}
